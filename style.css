@@ -1,6 +1,4 @@
-/* ============================================
-   Sabib Ahmed Portfolio - Complete Style
-   ============================================ */
+/* Sabib Ahmed Portfolio - Mobile Responsive */
 
 /* ---------- RESET & BASE ---------- */
 *,
@@ -20,6 +18,7 @@ body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background: #fafaf8;
+    width: 100%;
 }
 
 img {
@@ -98,12 +97,14 @@ h2 {
 /* ---------- NAVBAR ---------- */
 .uk-navbar-container {
     background-color: #500000 !important;
+    padding: 0 15px;
 }
 
 .uk-navbar-nav > li > a {
     color: white !important;
     font-weight: 500;
     transition: opacity 0.3s ease;
+    font-size: 14px;
 }
 
 .uk-navbar-nav > li > a:hover {
@@ -113,21 +114,27 @@ h2 {
 .uk-logo {
     font-weight: 700 !important;
     color: white !important;
+    font-size: 1.2rem;
 }
 
-/* ---------- OFF CANVAS (MOBILE MENU) ---------- */
+/* ---------- OFF CANVAS ---------- */
 .uk-offcanvas-bar {
     background-color: #500000;
 }
 
 .uk-nav-primary > li > a {
     color: white !important;
+    font-size: 1.1rem;
+    padding: 12px 0;
 }
 
 /* ---------- PROFILE IMAGE ---------- */
 .uk-border-circle {
     border: 4px solid #500000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    width: 100%;
+    height: auto;
 }
 
 /* ---------- SOCIAL ICONS ---------- */
@@ -135,21 +142,19 @@ h2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    margin: 0 8px;
+    width: 50px;
+    height: 50px;
+    margin: 0 6px;
     border-radius: 50%;
     color: #fff !important;
-    font-size: 24px;
-    line-height: 60px;
+    font-size: 20px;
     text-decoration: none;
     transition: transform 0.2s, background 0.2s;
 }
 
 .social-icon i {
     color: #fff !important;
-    font-size: 24px;
-    line-height: 60px;
+    font-size: 20px;
 }
 
 .social-icon:hover {
@@ -300,10 +305,10 @@ a.conf:hover {
 }
 
 /* ============================================
-   📱 MOBILE RESPONSIVE ADDITIONS
+   📱 MOBILE RESPONSIVE
    ============================================ */
 
-/* ---------- TABLETS & SMALL LAPTOPS ---------- */
+/* ---------- TABLETS ---------- */
 @media (max-width: 960px) {
     .uk-container {
         padding-left: 15px;
@@ -322,10 +327,15 @@ a.conf:hover {
 
 /* ---------- MOBILE (PHONES) ---------- */
 @media (max-width: 768px) {
-    /* Container padding */
+    /* Container */
     .uk-container {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        width: 100% !important;
+    }
+
+    .uk-width-3-4\@m {
+        width: 100% !important;
     }
 
     /* Profile image - hide on mobile */
@@ -333,31 +343,34 @@ a.conf:hover {
         display: none !important;
     }
 
-    /* Profile text */
+    /* About text - full width */
     .uk-width-expand {
         width: 100% !important;
-        padding: 0 5px;
+        padding: 0 5px !important;
     }
 
     .uk-width-expand p {
-        font-size: 0.95rem;
+        font-size: 0.92rem !important;
         text-align: justify;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     /* Section titles */
     .uk-h2,
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.25rem !important;
         margin-top: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
+        word-wrap: break-word;
     }
 
     /* Cards */
     .uk-card-body {
-        padding: 15px 18px;
+        padding: 15px 16px !important;
     }
 
-    /* Education - stack on mobile */
+    /* Education */
     .uk-grid-small > * {
         padding-left: 10px;
     }
@@ -369,7 +382,7 @@ a.conf:hover {
 
     /* Research Experience */
     .uk-flex-between {
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: flex-start !important;
     }
 
@@ -378,22 +391,23 @@ a.conf:hover {
         margin-top: 5px;
     }
 
-    /* News section */
+    /* News */
     .news-section h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         padding-left: 0.5rem;
     }
 
     .news-list-wrapper {
-        padding: 0.3rem 1rem;
-        max-height: 400px;
+        padding: 0.3rem 0.8rem;
+        max-height: 380px;
     }
 
     ul.news-list li {
-        font-size: 0.85rem;
+        font-size: 0.82rem !important;
         padding: 0.7rem 0;
         gap: 8px;
         flex-wrap: wrap;
+        word-wrap: break-word;
     }
 
     ul.news-list li::before {
@@ -401,16 +415,15 @@ a.conf:hover {
     }
 
     .badge-new {
-        font-size: 0.65rem;
+        font-size: 0.6rem;
         padding: 0 5px;
     }
 
-    /* Social icons (header) */
-    .uk-flex-center a i {
-        font-size: 1rem;
+    .date {
+        font-size: 0.82rem;
     }
 
-    /* Contact section */
+    /* Contact */
     .uk-child-width-1-2\@m > * {
         width: 100% !important;
         margin-bottom: 15px;
@@ -420,27 +433,27 @@ a.conf:hover {
         width: 100% !important;
     }
 
-    /* Social icons (bottom) */
+    /* Social icons */
     .social-icon {
-        width: 45px;
-        height: 45px;
-        font-size: 18px;
-        line-height: 45px;
-        margin: 0 5px;
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+        margin: 0 4px;
     }
 
     .social-icon i {
-        font-size: 18px;
-        line-height: 45px;
+        font-size: 16px;
     }
 
-    /* Publication items */
+    /* Publications */
     .uk-text-lead {
-        font-size: 0.9rem;
+        font-size: 0.88rem !important;
+        word-wrap: break-word;
     }
 
     .uk-list > li {
         margin-bottom: 18px;
+        word-wrap: break-word;
     }
 
     .uk-list > li:hover {
@@ -449,153 +462,137 @@ a.conf:hover {
         margin-right: -10px;
     }
 
-    /* Skills section */
+    /* Skills */
     .uk-list-bullet > li {
-        font-size: 0.9rem;
+        font-size: 0.88rem;
         padding: 4px 0;
+        word-wrap: break-word;
     }
 
-    /* Thesis section */
+    /* Thesis */
     #thesis .uk-text-lead {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
-    /* Position cards */
+    /* Positions */
     .uk-flex-middle\@s {
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: flex-start !important;
     }
 
     /* Footer */
     .uk-section-secondary {
-        padding: 15px 0;
+        padding: 12px 0;
     }
 
     .uk-section-secondary p {
+        font-size: 0.75rem;
+    }
+
+    .uk-button-text {
         font-size: 0.8rem;
     }
 
-    /* Button text (paper links) */
-    .uk-button-text {
-        font-size: 0.85rem;
-    }
-
-    /* Status badges */
     span[style*="background-color"] {
-        font-size: 0.75rem;
+        font-size: 0.7rem !important;
         padding: 1px 4px !important;
     }
 
-    /* Hide desktop-only nav links */
     .uk-visible\@m {
         display: none !important;
     }
 
-    /* Show mobile toggle */
     .uk-hidden\@m {
-        display: flex !important;
+        display: inline-flex !important;
+    }
+
+    .uk-navbar-container {
+        padding: 0 10px;
+    }
+
+    .uk-logo {
+        font-size: 1rem;
+    }
+
+    .uk-offcanvas-bar {
+        padding: 30px 20px;
     }
 }
 
 /* ---------- SMALL PHONES (≤ 480px) ---------- */
 @media (max-width: 480px) {
-    /* Container */
     .uk-container {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
     }
 
-    /* Profile text */
     .uk-width-expand p {
-        font-size: 0.88rem;
+        font-size: 0.85rem !important;
     }
 
-    /* Section titles */
     .uk-h2,
     h2 {
-        font-size: 1.15rem;
+        font-size: 1.1rem !important;
     }
 
-    /* News */
     .news-section h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .news-list-wrapper {
-        padding: 0.2rem 0.8rem;
-        max-height: 350px;
+        padding: 0.2rem 0.6rem;
+        max-height: 320px;
     }
 
     ul.news-list li {
-        font-size: 0.8rem;
-        padding: 0.6rem 0;
-        gap: 6px;
+        font-size: 0.75rem !important;
+        padding: 0.5rem 0;
+        gap: 5px;
     }
 
     .badge-new {
-        font-size: 0.6rem;
-        padding: 0 4px;
+        font-size: 0.55rem;
+        padding: 0 3px;
     }
 
-    /* Cards */
+    .date {
+        font-size: 0.75rem;
+    }
+
     .uk-card-body {
-        padding: 12px 14px;
+        padding: 12px 12px !important;
     }
 
-    /* Social icons (bottom) */
     .social-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-        line-height: 40px;
-        margin: 0 4px;
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+        margin: 0 3px;
     }
 
     .social-icon i {
-        font-size: 16px;
-        line-height: 40px;
+        font-size: 14px;
     }
 
-    /* Publication links */
     .uk-text-lead {
-        font-size: 0.85rem;
+        font-size: 0.82rem !important;
     }
 
     .uk-button-text {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
-    /* Skills */
-    .uk-list-bullet > li {
-        font-size: 0.85rem;
-    }
-
-    /* Footer */
-    .uk-section-secondary p {
-        font-size: 0.7rem;
-    }
-
-    /* Status badges */
     span[style*="background-color"] {
-        font-size: 0.65rem !important;
+        font-size: 0.6rem !important;
+        padding: 0 4px !important;
     }
 
-    /* Hide profile image completely on very small */
-    .uk-width-1-2 {
-        width: 100% !important;
-    }
-
-    /* Contact card */
-    .uk-card-title {
-        font-size: 1rem;
-    }
-
-    .uk-card-primary p {
-        font-size: 0.85rem;
+    .uk-section-secondary p {
+        font-size: 0.65rem;
     }
 }
 
-/* ---------- LARGE SCREENS (≥ 1200px) ---------- */
+/* ---------- LARGE SCREENS ---------- */
 @media (min-width: 1200px) {
     .uk-container {
         padding-left: 30px;
@@ -612,7 +609,7 @@ a.conf:hover {
     }
 }
 
-/* ---------- PRINT STYLES ---------- */
+/* ---------- PRINT ---------- */
 @media print {
     .uk-navbar-container,
     .uk-section-secondary {

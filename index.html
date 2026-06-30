@@ -3,7 +3,7 @@
     <head>
         <title>Sabib Ahmed</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.1/dist/css/uikit.min.css" />
@@ -19,7 +19,7 @@
                 <a class="uk-navbar-item uk-logo uk-text-primary" href="index.html">Sabib Ahmed</a>
             </div>
             <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
+                <ul class="uk-navbar-nav uk-visible@m">
                     <li class="uk-active"> <a href="index.html"> Home </a> </li>
                     <li class="uk-active"> <a href="index.html#about"> About </a> </li>
                     <li class="uk-active"> <a href="index.html#news"> News </a> </li>
@@ -27,12 +27,10 @@
                     <li class="uk-active"> <a href="index.html#research-experience"> Experience </a> </li>
                     <li class="uk-active"> <a href="index.html#research"> Publications </a> </li>
                     <li class="uk-active"> <a href="index.html#thesis"> Thesis </a> </li>
-                    <!-- <li class="uk-active"> <a href="index.html#experience"> Experience </a> </li> -->
                     <li class="uk-active"> <a href="index.html#projects"> Projects </a> </li>
                     <li class="uk-active"> <a href="index.html#skills"> Skills </a> </li>
                     <li class="uk-active"> <a href="index.html#position"> Positions </a> </li>
                     <li class="uk-active"> <a href="index.html#contact"> Contact </a> </li>
-                    
                 </ul>
                 <a class="uk-active uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas-nav-primary" uk-toggle></a>
             </div>
@@ -41,19 +39,17 @@
         <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
             <div class="uk-offcanvas-bar uk-flex uk-flex-column">
                 <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                    <li class="uk-active uk-visible@m"> <a href="index.html"> Home </a> </li>
-                    <li class="uk-active uk-visible@m"> <a href="index.html#about"> About </a> </li>
-                    <li class="uk-active uk-visible@m"> <a href="index.html#news"> News </a> </li>
-                    <li class="uk-active uk-visible@m"> <a href="index.html#education"> Education </a> </li>
-                    <li class="uk-active uk-visible@m"> <a href="index.html#research-experience"> Experience </a> </li>
-                    <li class="uk-active uk-visible@m"> <a href="index.html#research"> Publications </a> </li>
-                    <li class="uk-active uk-visible@m"> <a href="index.html#thesis"> Thesis </a> </li>
-                    <!-- <li class="uk-active uk-visible@m"> <a href="index.html#experience"> Experience </a> </li> -->
-                    <li class="uk-active uk-visible@m"> <a href="index.html#projects"> Projects </a> </li>
-                    <li class="uk-active uk-visible@m"> <a href="index.html#skills"> Skills </a> </li>
-                    <li class="uk-active uk-visible@m"> <a href="index.html#position"> Positions </a> </li>
-                    <li class="uk-active uk-visible@m"> <a href="index.html#contact"> Contact </a> </li>
-                    
+                    <li class="uk-active"> <a href="index.html"> Home </a> </li>
+                    <li class="uk-active"> <a href="index.html#about"> About </a> </li>
+                    <li class="uk-active"> <a href="index.html#news"> News </a> </li>
+                    <li class="uk-active"> <a href="index.html#education"> Education </a> </li>
+                    <li class="uk-active"> <a href="index.html#research-experience"> Experience </a> </li>
+                    <li class="uk-active"> <a href="index.html#research"> Publications </a> </li>
+                    <li class="uk-active"> <a href="index.html#thesis"> Thesis </a> </li>
+                    <li class="uk-active"> <a href="index.html#projects"> Projects </a> </li>
+                    <li class="uk-active"> <a href="index.html#skills"> Skills </a> </li>
+                    <li class="uk-active"> <a href="index.html#position"> Positions </a> </li>
+                    <li class="uk-active"> <a href="index.html#contact"> Contact </a> </li>
                 </ul>
                 <a class="uk-active uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas-nav-primary" uk-toggle></a>
             </div>
@@ -96,72 +92,6 @@
         <!-- Body -->
         <div class="uk-flex uk-flex-center uk-margin-remove-top uk-margin-medium-bottom">
         <div class="uk-container uk-width-1-1 uk-width-3-4@m uk-padding-small">
-
-
-            
-
-            <!-- <div style="width: 100%; display: flex; justify-content: center; margin: 60px 0;" >
-
-    <div style="width: 1000px;">
-
-        <h2 style="
-            text-align: left;
-            margin-bottom: 20px;
-            font-weight: 600;
-            color: #500000;
-        ">
-            Latest Updates
-        </h2>
-
-        <div style="
-            height: 320px;
-            overflow-y: auto;
-            background: #ffffff;
-            border: 1px solid #e5e5e5;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            padding: 25px 30px;
-        ">
-
-            <ul style="margin: 0; padding-left: 20px;">
-
-                <li style="margin-bottom: 18px; font-size: 15px; color: #444; line-height: 1.6;">
-                    <span style="color: red; font-weight: 600;">News!</span>
-                    <strong> Feb 2026:</strong>
-                    Our IEEE paper has been accepted for presentation.
-                </li>
-
-                <li style="margin-bottom: 18px; font-size: 15px; color: #444; line-height: 1.6;">
-                    <span style="color: red; font-weight: 600;">News!</span>
-                    <strong> Jan 2026:</strong>
-                    Started working on crack detection using YOLOv12.
-                </li>
-
-                <li style="margin-bottom: 18px; font-size: 15px; color: #444; line-height: 1.6;">
-                    <span style="color: red; font-weight: 600;">News!</span>
-                    <strong> Dec 2025:</strong>
-                    Presented DS-ViT architecture at AI Conference.
-                </li>
-
-                <li style="margin-bottom: 18px; font-size: 15px; color: #444; line-height: 1.6;">
-                    <span style="color: red; font-weight: 600;">News!</span>
-                    <strong> Nov 2025:</strong>
-                    Released custom crack detection dataset.
-                </li>
-
-                <li style="margin-bottom: 18px; font-size: 15px; color: #444; line-height: 1.6;">
-                    <span style="color: red; font-weight: 600;">News!</span>
-                    <strong> Oct 2025:</strong>
-                    Completed AI research internship successfully.
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</div> -->
 
         <div class="news">
 
@@ -234,16 +164,6 @@
                     <a class="conf" href="https://peccii.pust.ac.bd/">IEEE PECCII 2026</a>.
                 </span>
                 </li>
-
-                <!-- <li class="is-new">
-                <span>
-                     <span class="badge-new">New!</span> -->
-                    <!-- <span class="date">May 2026:</span>
-                    Our paper <em>RetinoNet: A Hybrid CNN with Ghost Blocks and Dual Attention for Accurate Multi-Class Diabetic Retinopathy Classification</em>
-                    accepted to
-                    <a class="conf" href="https://peccii.pust.ac.bd/">IEEE PECCII 2026</a>.
-                </span>
-                </li> -->
 
                 <li class="is-new">
                 <span>
@@ -421,27 +341,6 @@
                     <div><i>Signal, Image and Video Processing, <b>Springer Nature</b></i></div>
                     <div><b style="color:  #ff3333;">Schimago Ranking: Q2</b></div>
                     <div><span style="background-color: lightgreen; padding: 2px 5px; border-radius: 5px;">Accepted</span></div>
-                    <!-- <details style="margin-top: 10px;"> -->
-                        <!-- <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Abstract
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                        Optical Coherence Tomography (OCT) is essential for early retinal disease detection, enabling timely intervention 
-                        and preventing vision loss. However, the rapid growth of OCT data has increased diagnostic workload, motivating 
-                        automated, accurate, and clinically interpretable computer-aided diagnostic systems. In this study, we propose a 
-                        Cross-Attention CNN-ViT hybrid framework combining DenseNet201-based local feature extraction with ViT-Base/16 global 
-                        contextual modeling via cross-attention, capturing both fine-grained lesions and long-range retinal dependencies. For 
-                        interpretability, we introduce a dual explainability framework that fuses Grad-CAM and transformer attention into a unified 
-                        Grad-Attention Map (GAM), visualizing both localized pathological biomarkers and global retinal context. The model is 
-                        evaluated on the Kaggle OCT C8 dataset (24,000 images, eight classes: AMD, CNV, CSR, DME, DR, drusen, macular hole, normal), 
-                        split into training, validation, and independent test sets, with five-fold cross-validation applied only on training data 
-                        under strict image-level separation. It achieves 97.42% accuracy, 99.63% specificity, and 97.41% F1-score, outperforming CNN, 
-                        transformer, and hybrid baselines. GAM visualizations align with clinically relevant biomarkers, indicating strong interpretability. 
-                        The framework demonstrates a robust and scalable system for automated retinal screening, triage, and diagnosis.    
-                        
-                        </div> -->
-                    <!-- </details> -->
                     <div class="uk-text-lead"></div>
                 </li>
 
@@ -450,21 +349,6 @@
                     <div class="uk-text-lead"><a href="" style="color:#b30749"></a> UDF-Net: Uncertainty–Diversity Guided Multi-Level Feature Fusion for Skin Cancer Classification</div>
                     <div> <b>Sabib Ahmed</b>, Jannatul Ferdus Aspia, Md. Khabir Uddin Ahamed </div>
                     <div><i>Manuscript in Preparation, 2026</b></i></div>
-                    <!-- <div><b style="color:  #ff3333;">Schimago Ranking: Q3</b></div> -->
-                    <!-- <div><span style="background-color: #17a2b8; color: white; padding: 2px 5px; border-radius: 5px;">Under Review</span></div> -->
-                    <!-- <details style="margin-top: 10px;">
-                        <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Details
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Developed UDF-Net, a dual-backbone framework for skin cancer classification 
-                            that uses multi-level feature fusion with confidence- 
-                            and diversity-guided weighting to improve performance and 
-                            reliability, along with uncertainty estimation for better model 
-                            calibration and interpretability.
-                        </div>
-                    </details> -->
                     <div class="uk-text-lead"></div>
                 </li>
             </ul>
@@ -479,30 +363,6 @@
                     <div> <b>Sabib Ahmed</b>, Jannatul Ferdus Aspia, Bithi Rani Kapali, Khalilur Rahman, Md. Samir Murad </div>
                     <div><i>2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN) </i></div>
                     <div><span style="background-color: lightgreen; padding: 2px 5px; border-radius: 5px;">Accepted</span></div>
-                    <!-- <details style="margin-top: 10px;">
-                        <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Abstract
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Deep learning models for medical image analysis are frequently constrained by severe class imbalance 
-                            and data scarcity, especially in clinical settings where positive cases are rare. Although GAN-based 
-                            synthesis and classical augmentation have been investigated to address these problems, they often 
-                            have poor scalability under real-world restrictions, low diversity, and training instability. In 
-                            this study, we thoroughly assess text-to-image Stable Diffusion as a useful data augmentation 
-                            technique for class-imbalanced medical imaging. Using renal stone CT imaging as a case study, 
-                            we optimize Stable Diffusion with Low-Rank Adaptation (LoRA) to produce high-quality synthetic 
-                            samples exclusively for the minority class. Instead of suggesting a new classifier, we evaluate 
-                            the created data's usefulness using many standardized downstream evaluation backbones, such as 
-                            CNN and transformer-based models, to guarantee robustness among representation learning paradigms. 
-                            Comprehensive tests and ablation studies on synthetic-to-real data ratios show that while excessive 
-                            dependence on synthetic data worsens performance due to distributional bias, moderate diffusion-based 
-                            augmentation (25–50%) consistently increases recall and F1-score. Qualitative analysis and Fr'echet 
-                            Inception Distance enhance the realism of the generated visuals. Overall, this study demonstrates 
-                            that, under realistic data and computational restrictions, Stable Diffusion, when modified via LoRA, 
-                            can function as an efficient but limited data augmentation technique for class-imbalanced medical imaging. 
-                        </div>
-                    </details> -->
                     <a href="https://ieeexplore.ieee.org/document/11546637" target="_blank" class="uk-button uk-button-text">[Paper]</a>
                     <div class="uk-text-lead"></div>
                 </li>
@@ -513,100 +373,15 @@
                     <div> <i>5th International Conference On Electrical, Computer, & Telecommunication Engineering (ICECTE) </i></div>
                     <div><span style="background-color: lightgreen; padding: 2px 5px; border-radius: 5px;">Accepted</span></div>
 
-                    <!-- <details style="margin-top: 10px;">
-                        <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Abstract
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Alzheimer's disease (AD) is a progressive neurological illness that needs to be diagnosed early 
-                            and accurately in order to be effectively treated. This study proposes a novel Dual-Stage Vision 
-                            Transformer (DS-ViT) architecture that combines CNN-based local patch embedding with Transformer-based 
-                            global attention to enable the model to capture both fine-grained structural information and 
-                            inter-regional interdependence within brain MRI scans. An Alzheimer's MRI dataset with four stages 
-                            of dementia was utilized to train and assess the proposed DS-ViT model. An early stopping strategy 
-                            was used to reduce overfitting; as validation performance plateaued, training was stopped at the 
-                            83rd epoch. According to experimental data, DS-ViT outperforms the standard ViT-Base/16 and 
-                            traditional CNNs (VGG16, MobileNetV2, InceptionV3), achieving an accuracy of 95.40%. 
-                            Additionally, the model regularly demonstrates strong and dependable classification performance across 
-                            all classes with excellent precision, recall, and F1-scores. An important development in AI-driven 
-                            diagnostic systems, the DS-ViT framework provides a flexible and modular design that may be applied to 
-                            further medical imaging and neurodegenerative disease detection tasks.
-                        </div>
-                    </details> -->
-
-
                     <a href="https://ieeexplore.ieee.org/document/11429292" target="_blank" class="uk-button uk-button-text">[Paper]</a>
                     <div class="uk-text-lead"></div>
                 </li>
 
-
-
-                <!-- <li>
-                    <div class="uk-text-lead"><a href="https://icerie2025.sust.edu/" style="color:#b30749"><b>[ICERIE 2025]</b></a> &nbsp; An Innovative Approach to Smoker Status Prediction with ML Algorithms in Bangladesh</div>
-                    <div> Md. Osman Goni, Newton Das, <b>Sabib Ahmed</b>, Jannatul Ferdus Aspia, Mayaz Uddin Gazi </div>
-                    <div><i>8th International Conference on Engineering Research, Innovation and Education (ICERIE 2025)</i></div>
-                    <div><span style="background-color: lightgreen; padding: 2px 5px; border-radius: 5px;">Accepted</span></div>
-                    <details style="margin-top: 10px;">
-                        <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Abstract
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            In Bangladesh, smoking continues to be a significant issue for public health. As for the 
-                            divisions in age, currently, about 18% of adults smoke, together with older and younger men, 
-                            including 36.2% of men and 0.8%. Moreover, smoking, including both the use of non-combustible 
-                            tobacco and different shades of age, particularly smokeless tobacco products, including betel quid 
-                            and zarda, are significantly common among middle-aged to elderly men and women. Such an 
-                            extensive consumption pattern leads to significant health complications, contributing to more than 
-                            100,000 deaths in the country. About 7% of teenagers use smoking and tobacco products, hinting at 
-                            negligence of youth tobacco use. In order to approximate and forecast smoking patterns, this study 
-                            approaches the possibility and effectiveness of some machine learning algorithms for predicting the 
-                            smoking status of patients based on their age, height, weight, waist circumference, visual acuity in 
-                            both eyes, hearing capability in both ears, systolic and relaxation. We use seven machine learning 
-                            algorithms: Naïve Bayes, logistic regression classifier, random forest classifier, XGBoost classifier, 
-                            Decision Tree , KNeighbors and a new approach called HEStacked to classify the smoking status of 
-                            patients. Each algorithm is tested with different efficiency measures, such as accuracy, and confusion 
-                            matrices, after being trained on a balanced dataset. Result illustrates the effectiveness of the 
-                            HEStacked Classifier, which showed an impressive precision of around 88.03% in correctly 
-                            classifying smoker status. This model highlights the important role of training and targeted 
-                            intervention measures, which will be a great asset for public health activities aimed at the prevention 
-                            and problem of diseases associated with smoking in more general. These findings can be used as a 
-                            promising tool for the prediction of smoking status based on health risk perceptions of Bangladesh. 
-                        </div>
-                    </details>
-
-                    <a href="https://www.researchgate.net/profile/Md-Osman-Goni-5/publication/399681314" target="_blank" class="uk-button uk-button-text">[Paper]</a>
-                    <div class="uk-text-lead"></div>
-                </li> -->
-                
-                
-                
                 <li>
                     <div class="uk-text-lead"><a href="https://peccii.pust.ac.bd/" style="color:#b30749"><b>[IEEE PECCII 2026]</b></a> &nbsp; Parameter-Efficient Fine-Tuning with Adapters for Sorghum Disease Classification</div>
                     <div> <b>Sabib Ahmed</b>, Jannatul Ferdus Aspia, MD Fardin Ahmed, Khalilur Rahman, Md Samir Murad </div>
                     <div><i>IEEE International Conference on Power, Electronics, Communications, Computing, and Intelligent Infrastructure 2026 (PECCII)</i></div>
                     <div><span style="background-color: lightgreen; padding: 2px 5px; border-radius: 5px;">Accepted</span></div>
-                    <!-- <details style="margin-top: 10px;">
-                        <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Abstract
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Sorghum is a globally important cereal crop whose productivity is severely affected by plant diseases, 
-                            necessitating accurate and timely disease identification. Although deep learning has shown strong performance 
-                            in automated sorghum disease analysis, most existing approaches rely on full fine-tuning of large pretrained 
-                            models, resulting in high computational cost, large data requirements, and limited suitability for resource-constrained 
-                            agricultural environments. This paper investigates adapter-based parameter-efficient fine-tuning for multi-class sorghum 
-                            disease classification using a pretrained EfficientNet-B3 backbone. Lightweight adapter modules and a classification head 
-                            are trained while keeping the backbone frozen, reducing the number of trainable parameters to 15.58% of the full model. 
-                            Experiments on a real-world, class-imbalanced sorghum disease dataset, handled using appropriate imbalance-aware training 
-                            strategies, demonstrate that PEFT-B3 achieves up to 99.58% accuracy, matching full fine-tuning performance while significantly 
-                            outperforming frozen-backbone baselines. Despite the high accuracy achieved, the dataset contains visually distinguishable disease 
-                            symptoms, which contribute to the strong performance observed. The results highlight the effectiveness of parameter-efficient fine-tuning for 
-                            accurate, efficient, and deployable sorghum disease classification in realistic agricultural settings.
-                        </div>
-                    </details> -->
                     <div class="uk-text-lead"></div>
                 </li>
 
@@ -615,76 +390,14 @@
                     <div> <b>Sabib Ahmed</b>, Jannatul Ferdus Aspia, Jhumki Barmon, Md. Lysuzzaman </div>
                     <div><i>IEEE International Conference on Power, Electronics, Communications, Computing, and Intelligent Infrastructure 2026 (PECCII)</i></div>
                     <div><span style="background-color: lightgreen; padding: 2px 5px; border-radius: 5px;">Accepted</span></div>
-                    <!-- <details style="margin-top: 10px;">
-                        <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Abstract
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Accurate detection of renal abnormalities is critical for preventing chronic kidney disease progression 
-                            and reducing diagnostic delays. However, existing deep learning models for renal CT analysis often suffer 
-                            from overfitting, class imbalance sensitivity, and limited interpretability. This paper proposes Ensemble-ASNet, 
-                            an optimized weighted soft-voting ensemble that integrates three high-performing pre-trained Convolutional Neural Network (CNN) 
-                            backbones, such as InceptionV3, VGG16, and MobileNetV2, to improve robustness and discriminative capability for four-class renal 
-                            CT classification (Cyst, Normal, Stone, and Tumor). Optimal ensemble weights are learned via constrained validation-based optimization. 
-                            Experimental results demonstrate that Ensemble-ASNet consistently outperforms individual models and recent CNN, transformer, and 
-                            hybrid-based approaches, achieving 99.42% accuracy with equally strong precision, recall, and F1-score values. Grad-CAM++ visualizations 
-                            confirm attention to clinically relevant anatomical regions, enhancing interpretability. These results highlight Ensemble-ASNet as an 
-                            effective and reliable framework for automated renal disease diagnosis using CT images.
-                        </div>
-                    </details> -->
                     <div class="uk-text-lead"></div>
                 </li>
-
-                <!-- <li>
-                    <div class="uk-text-lead"><a href="https://peccii.pust.ac.bd/" style="color:#b30749"><b>[IEEE PECCII 2026]</b></a> &nbsp; RetinoNet: A Hybrid CNN with Ghost Blocks and Dual Attention for Accurate Multi-Class Diabetic Retinopathy Classification</div>
-                    <div> Khalilur Rahman, Md. Samir Murad, Md Nuruzzaman, <b>Sabib Ahmed</b> </div>
-                    <div><i>IEEE International Conference on Power, Electronics, Communications, Computing, and Intelligent Infrastructure 2026 (PECCII)</i></div>
-                    <div><span style="background-color: lightgreen; padding: 2px 5px; border-radius: 5px;">Accepted</span></div>
-                    <details style="margin-top: 10px;">
-                        <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Abstract
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Diabetic retinopathy (DR) is a leading cause of vision loss among individuals with diabetes, 
-                            necessitating timely and accurate screening to prevent irreversible damage. While deep learning 
-                            approaches have demonstrated promise in automated DR detection, challenges including class imbalance, 
-                            difficulty in detecting subtle lesions, and high computational demands limit their effective 
-                            deployment in real-world applications. To address these limitations, we propose RetinoNet, 
-                            a hybrid convolutional neural network that integrates standard convolutional layers with 
-                            Ghost Blocks and dual attention mechanisms (Squeeze-and-Excitation and Convolutional Block Attention Module) 
-                            to efficiently capture both global contextual patterns and localized retinal abnormalities. 
-                            RetinoNet is designed for five-class DR classification, achieving robust performance across all 
-                            severity levels while maintaining computational efficiency and demonstrating potential for deployment 
-                            in resource-constrained clinical environments. Comprehensive evaluations of the APTOS 2019 dataset show 
-                            that RetinoNet demonstrates competitive performance compared to several baseline CNN architectures, 
-                            achieving an overall accuracy of 95.00%, with strong precision, recall, and F1-score performance across 
-                            all classes. Ablation studies further highlight the strength of the proposed architecture components in 
-                            enhancing feature discrimination and generalization. These results suggest that RetinoNet provides 
-                            a reliable and scalable framework for automated diabetic retinopathy screening and diagnosis. 
-                        </div>
-                    </details>
-                    <div class="uk-text-lead"></div>
-                </li> -->
 
                 <li>
                     <div class="uk-text-lead"><a href="https://spicscon.org/2026/" style="color:#b30749"><b>[IEEE SPICSCON 2026]</b></a> &nbsp; RefineDiff: Latent Diffusion-Based Feature Refinement for Medical Image Segmentation</div>
                     <div> <b>Sabib Ahmed</b>, Jhumki Barmon, Khalilur Rahman, Md. Ashraful, Jannatul Ferdus Aspia </div>
                     <div><i>IEEE SPICSCON: IEEE International Conference on Signal Processing, Information, Communication and Systems 2026</i></div>
                     <div><span style="background-color: #17a2b8; color: white; padding: 2px 5px; border-radius: 5px;">Under Review</span></div>
-                    <!-- <details style="margin-top: 10px;">
-                        <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Details
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            RefineDiff is a lightweight, plug-and-play latent diffusion module that enhances medical image segmentation by performing iterative denoising directly in the bottleneck feature space. 
-                            Unlike conventional diffusion approaches that require architectural redesign or operate in pixel space, it integrates seamlessly into existing encoder–decoder models. This latent-space 
-                            refinement improves structural consistency and boundary delineation, leading to more complete segmentation. Extensive experiments show consistent performance gains across 
-                            multiple architectures, highlighting its generalizability and practical efficiency. 
-                        </div>
-                    </details> -->
                     <div class="uk-text-lead"></div>
                 </li>
 
@@ -701,44 +414,13 @@
                 <li>
                     <div class="uk-text-lead"><span style="color:#800000">A Study on Real-Time Pavement Crack Detection Using YOLOv9: Challenges and Opportunities</span></div>
                     <div> <b>Sabib Ahmed</b>, Jannatul Ferdus Aspia, Md. Abu Naser Mojumder </div>
-                    <!-- <div><b>Role:</b> Lead Researcher</div> -->
-                    <!-- <div class="uk-margin-small-top">Developed a real-time pavement crack detection system using the YOLOv9 architecture. The work involved dataset preparation, custom training pipelines, model optimization, and evaluation for infrastructure monitoring applications. The thesis focused on improving detection accuracy, handling complex crack patterns, and enabling efficient real-time inference.</div> -->
-                    <!-- <div class="uk-margin-small-top">
-                        <span class="uk-label uk-margin-small-right">YOLOv9</span>
-                        <span class="uk-label uk-margin-small-right">Real-time Detection</span>
-                        <span class="uk-label uk-margin-small-right">Computer Vision</span>
-                        <span class="uk-label uk-margin-small-right">Deep Learning</span>
-                    </div> -->
-
-                    <!-- <details style="margin-top: 10px;">
-                        <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Abstract
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            For efficient road maintenance and infrastructure safety, pavement crack detection is essential. 
-                            Nevertheless, manual inspection techniques are time-consuming, prone to mistakes, and unsuitable 
-                            for extensive monitoring. An automated crack detection system utilizing the cutting-edge deep learning 
-                            model YOLOv9 is presented in this work. Four different types of cracks were identified in the 1,200 
-                            annotated pavement images that made up the custom dataset: pothole, longitudinal, transverse, and alligator. 
-                            Real-world variations in road conditions, surface textures, and lighting environments are captured in the dataset.
-                            This dataset was used to train and assess YOLOv9, which produced an F1-score of 73.2% and a mean Average Precision (mAP)
-                            of 70.4%. These outcomes reveal how well YOLOv9 performs in providing precise, scalable, and instantaneous crack detection. 
-                            By facilitating prompt and well-informed decision-making by road authorities and civil engineers, the suggested system has 
-                            the potential to greatly improve road safety and maintenance workflows. 
-                        </div>
-                    </details> -->
-
-
-
-
                 </li>
             </ul>
 
             
 
 
-            <!-- Applied ML Projects Section
+            <!-- Applied ML Projects Section -->
             <!-- <hr class="uk-margin-small">
 
             <p id="projects" 
@@ -820,8 +502,7 @@
 
             <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
 
-                Brain Tumor Classification -->
-                <!-- <div>
+                <div>
 
                     <div class="uk-card uk-card-default uk-card-body"
                         style="border-left: 5px solid #500000; border-radius: 10px; height: 100%;">
@@ -853,10 +534,9 @@
 
                     </div>
 
-                </div> -->
+                </div>
 
-                <!-- Vehicle Detection -->
-                <!-- <div>
+                <div>
 
                     <div class="uk-card uk-card-default uk-card-body"
                         style="border-left: 5px solid #500000; border-radius: 10px; height: 100%;">
@@ -1036,8 +716,3 @@
 
     </body>
 </html>
-
-
-
-
-
