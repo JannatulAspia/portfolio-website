@@ -1,37 +1,136 @@
-/* Sabib Ahmed Portfolio - Style matching mostafij-rahman.github.io */
-/* Responsive Fix */    
+/* ============================================
+   Sabib Ahmed Portfolio - Complete Style
+   ============================================ */
+
+/* ---------- RESET & BASE ---------- */
 *,
 *::before,
-*::after{
-    box-sizing:border-box;
+*::after {
+    box-sizing: border-box;
 }
 
-html{
-    overflow-x:hidden;
-}
-
-body{
-    overflow-x:hidden;
-}
-
-img{
-    max-width:100%;
-    height:auto;
-}
-* {
-    color: inherit;
-}
 html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     color: #000;
 }
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #fafaf8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #007fe6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #bf5701;
+}
+
+hr.uk-margin-small {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* ---------- UIKIT OVERRIDES ---------- */
 .uk-label {
-    color: black;
+    color: #000;
     text-transform: none;
     background-color: transparent;
-    border: 1px solid black;
-    padding: 0px 3px;
+    border: 1px solid #000;
+    padding: 0 3px;
 }
-/* Social icons styling */
+
+.uk-text-bold {
+    font-weight: 600;
+}
+
+.uk-h2,
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #500000;
+}
+
+.uk-text-lead {
+    font-size: 1.0rem;
+    line-height: 1.5;
+    color: #800000;
+}
+
+.uk-card-default {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.uk-card-primary {
+    border-radius: 8px;
+}
+
+.uk-card-body {
+    padding: 25px 30px;
+}
+
+.uk-list > li {
+    margin-bottom: 25px;
+}
+
+.uk-list > li:hover {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    transition: all 0.3s ease;
+}
+
+/* ---------- NAVBAR ---------- */
+.uk-navbar-container {
+    background-color: #500000 !important;
+}
+
+.uk-navbar-nav > li > a {
+    color: white !important;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.uk-navbar-nav > li > a:hover {
+    opacity: 0.8;
+}
+
+.uk-logo {
+    font-weight: 700 !important;
+    color: white !important;
+}
+
+/* ---------- OFF CANVAS (MOBILE MENU) ---------- */
+.uk-offcanvas-bar {
+    background-color: #500000;
+}
+
+.uk-nav-primary > li > a {
+    color: white !important;
+}
+
+/* ---------- PROFILE IMAGE ---------- */
+.uk-border-circle {
+    border: 4px solid #500000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- SOCIAL ICONS ---------- */
 .social-icon {
     display: inline-flex;
     align-items: center;
@@ -44,168 +143,20 @@ html {
     font-size: 24px;
     line-height: 60px;
     text-decoration: none;
-    transition: transform .2s, background .2s;
+    transition: transform 0.2s, background 0.2s;
 }
+
 .social-icon i {
     color: #fff !important;
     font-size: 24px;
     line-height: 60px;
 }
+
 .social-icon:hover {
     transform: scale(1.1);
     background: #333;
 }
-.uk-text-bold {
-    font-weight: 600;
-}
-.uk-h2, h2 {
-    font-size: 1.5rem;
-}
-.uk-text-lead {
-    font-size: 1.0rem;
-    line-height: 1.5;
-    color: #333;
-}
-.uk-text-lead {
-    color: #800000;
-}
 
-/* Added background color for the top header */
-.uk-navbar-container {
-    /* background-color: #BF5701 !important; Burnt Orange - UT Austin color */
-    background-color: #500000 !important;
-}
-
-/* Card styling */
-.uk-card-default {
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
-
-.uk-card-primary {
-    border-radius: 8px;
-}
-
-/* Publication tags */
-.uk-label {
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-/* List item spacing */
-.uk-list > li {
-    margin-bottom: 25px;
-}
-
-/* Links styling */
-a {
-    color: #007fe6;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #BF5701;
-}
-
-/* Section dividers */
-hr.uk-margin-small {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border-top: 1px solid #e5e5e5;
-}
-
-/* Profile image styling */
-.uk-border-circle {
-    border: 4px solid #500000;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Grid spacing */
-.uk-grid-small > * {
-    padding-left: 15px;
-}
-
-/* Navigation links */
-.uk-navbar-nav > li > a {
-    color: white !important;
-    font-weight: 500;
-    transition: opacity 0.3s ease;
-}
-
-.uk-navbar-nav > li > a:hover {
-    opacity: 0.8;
-}
-
-/* Logo styling */
-.uk-logo {
-    font-weight: 700 !important;
-    color: white !important;
-}
-
-/* Status badges */
-span[style*="background-color: lightgreen"] {
-    font-weight: 500;
-}
-
-span[style*="background-color: #17a2b8"] {
-    font-weight: 500;
-}
-
-/* Content container */
-.uk-container {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/* Research/Publication item hover effect */
-.uk-list > li:hover {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 15px;
-    margin-left: -15px;
-    margin-right: -15px;
-    transition: all 0.3s ease;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .social-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-        line-height: 50px;
-    }
-    .social-icon i {
-        font-size: 20px;
-        line-height: 50px;
-    }
-    
-    .uk-h2, h2 {
-        font-size: 1.3rem;
-    }
-    
-    .uk-text-lead {
-        font-size: 0.95rem;
-    }
-}
-
-/* Footer styling */
-.uk-section-secondary {
-    padding: 20px 0;
-}
-
-.uk-section-secondary p {
-    color: white !important;
-    margin: 0;
-}
-
-/* Card body padding */
-.uk-card-body {
-    padding: 25px 30px;
-}
-
-/* Icons in header */
 .uk-flex-center a i {
     font-size: 1.2rem;
     color: #007fe6;
@@ -213,374 +164,468 @@ span[style*="background-color: #17a2b8"] {
 }
 
 .uk-flex-center a i:hover {
-    color: #BF5701;
+    color: #bf5701;
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Mobile menu (offcanvas) styling */
-.uk-offcanvas-bar {
-    /* background-color: #BF5701; */
-    background-color: #500000;
-}
-
-.uk-nav-primary > li > a {
-    color: white !important;
-}
-
-/* Print styles */
-@media print {
-    .uk-navbar-container,
-    .uk-section-secondary {
-        background-color: #BF5701 !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }
-}
-
-
-
-/* ─────────────────────────────────────────
-   NEWS SECTION
-   ───────────────────────────────────────── */
-
+/* ---------- NEWS SECTION ---------- */
 .news {
-  padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .news-section h2 {
-  font-size: 1.85rem;
-  font-weight: 700;
-  color: #500000;
-  letter-spacing: -0.02em;
-  margin-bottom: 1.25rem;
-  padding-left: 0.25rem;
-  border-left: 4px solid #500000;
-  padding-left: 0.75rem;
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #500000;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
+    border-left: 4px solid #500000;
+    padding-left: 0.75rem;
 }
 
-/* ── Scrollable wrapper ── */
 .news-list-wrapper {
-  background: #ffffff;
-  border: 1px solid #e8e4dc;
-  border-radius: 12px;
-  padding: 0.5rem 1.75rem;
-  max-height: 500px;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #d4cfc4 transparent;
+    background: #ffffff;
+    border: 1px solid #e8e4dc;
+    border-radius: 12px;
+    padding: 0.5rem 1.75rem;
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #d4cfc4 transparent;
 }
 
 .news-list-wrapper::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
 
 .news-list-wrapper::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 .news-list-wrapper::-webkit-scrollbar-thumb {
-  background: #d4cfc4;
-  border-radius: 4px;
+    background: #d4cfc4;
+    border-radius: 4px;
 }
 
-/* ── List reset ── */
 ul.news-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* ── Each item ── */
 ul.news-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 0.9rem 0;
-  border-bottom: 1px dashed #ece8e0;
-  font-size: 0.935rem;
-  line-height: 1.7;
-  color: #2b2b2b;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 0.9rem 0;
+    border-bottom: 1px dashed #ece8e0;
+    font-size: 0.935rem;
+    line-height: 1.7;
+    color: #2b2b2b;
 }
 
 ul.news-list li:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
-/* custom bullet */
 ul.news-list li::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  min-width: 6px;
-  border-radius: 50%;
-  background: #aaa9a2;
-  margin-top: 0.58em;
-  transition: background 0.2s;
+    content: '';
+    width: 6px;
+    height: 6px;
+    min-width: 6px;
+    border-radius: 50%;
+    background: #aaa9a2;
+    margin-top: 0.58em;
+    transition: background 0.2s;
 }
 
 ul.news-list li.is-new::before {
-  background: #b8320a;
-  box-shadow: 0 0 0 3px #fde8e0;
+    background: #b8320a;
+    box-shadow: 0 0 0 3px #fde8e0;
 }
 
-/* ── "New!" badge ── */
 .badge-new {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #b8320a;
-  background: #fff4f0;
-  border: 1px solid #f5c4b0;
-  border-radius: 4px;
-  padding: 1px 7px;
-  margin-right: 4px;
-  vertical-align: middle;
-  white-space: nowrap;
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #b8320a;
+    background: #fff4f0;
+    border: 1px solid #f5c4b0;
+    border-radius: 4px;
+    padding: 1px 7px;
+    margin-right: 4px;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
-/* ── Date label ── */
 .date {
-  font-weight: 600;
-  color: #111;
+    font-weight: 600;
+    color: #111;
 }
 
-/* ── Conference / award links (bold blue) ── */
 a.conf {
-  color: #1558b0;
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 1.5px solid transparent;
-  transition: border-color 0.15s;
+    color: #1558b0;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1.5px solid transparent;
+    transition: border-color 0.15s;
 }
 
 a.conf:hover {
-  border-bottom-color: #1558b0;
+    border-bottom-color: #1558b0;
 }
 
-/* ── Paper / general links ── */
-a.paper {
-  color: #1864c4;
-  font-weight: 400;
-  text-decoration: none;
-  border-bottom: 1px dashed #91b4e8;
-  transition: border-color 0.15s, color 0.15s;
+/* ---------- FOOTER ---------- */
+.uk-section-secondary {
+    padding: 20px 0;
+    background-color: #500000 !important;
 }
 
-a.paper:hover {
-  color: #0d47a1;
-  border-bottom-style: solid;
+.uk-section-secondary p {
+    color: white !important;
+    margin: 0;
 }
 
-/* ── Award inline text (non-link) ── */
-a.award {
-  color: #1558b0;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1.5px solid transparent;
-  transition: border-color 0.15s;
+/* ---------- SECTION TITLES ---------- */
+#education,
+#research-experience,
+#research,
+#thesis,
+#projects,
+#skills,
+#position,
+#contact {
+    color: #500000;
 }
 
-a.award:hover {
-  border-bottom-color: #1558b0;
+/* ============================================
+   📱 MOBILE RESPONSIVE ADDITIONS
+   ============================================ */
+
+/* ---------- TABLETS & SMALL LAPTOPS ---------- */
+@media (max-width: 960px) {
+    .uk-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .uk-card-body {
+        padding: 20px;
+    }
+
+    .uk-h2,
+    h2 {
+        font-size: 1.4rem;
+    }
 }
 
-/* ── Highlight award span ── */
-.highlight-award {
-  font-weight: 700;
-  color: #1558b0;
-}
-@media (max-width:768px){
+/* ---------- MOBILE (PHONES) ---------- */
+@media (max-width: 768px) {
+    /* Container padding */
+    .uk-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 
-.container{
-    width:100%;
-    padding:0 15px;
-}
+    /* Profile image - hide on mobile */
+    .uk-visible\@l {
+        display: none !important;
+    }
 
-section{
-    padding:60px 0;
-}
+    /* Profile text */
+    .uk-width-expand {
+        width: 100% !important;
+        padding: 0 5px;
+    }
 
-.hero{
-    padding:120px 20px 70px;
-    margin-top:80px;
-}
+    .uk-width-expand p {
+        font-size: 0.95rem;
+        text-align: justify;
+    }
 
-.hero h1{
-    font-size:2rem;
-    line-height:1.3;
-}
+    /* Section titles */
+    .uk-h2,
+    h2 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
 
-.hero p{
-    font-size:1rem;
-}
+    /* Cards */
+    .uk-card-body {
+        padding: 15px 18px;
+    }
 
-.btn{
-    width:100%;
-    max-width:260px;
-}
+    /* Education - stack on mobile */
+    .uk-grid-small > * {
+        padding-left: 10px;
+    }
 
-.about-content{
-    flex-direction:column;
-    text-align:center;
-}
+    .uk-width-1-4\@s {
+        width: 100% !important;
+        margin-bottom: 5px;
+    }
 
-.about-text{
-    order:2;
-}
+    /* Research Experience */
+    .uk-flex-between {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
 
-.about-image{
-    order:1;
-}
+    .uk-text-right\@s {
+        text-align: left !important;
+        margin-top: 5px;
+    }
 
-.profile-image{
-    width:260px;
-    height:auto;
-}
+    /* News section */
+    .news-section h2 {
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+    }
 
-.profile-info{
-    text-align:center;
-}
+    .news-list-wrapper {
+        padding: 0.3rem 1rem;
+        max-height: 400px;
+    }
 
-.education-item{
-    flex-direction:column;
-}
+    ul.news-list li {
+        font-size: 0.85rem;
+        padding: 0.7rem 0;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
 
-.education-icon{
-    width:70px;
-    height:70px;
-    margin-bottom:15px;
-}
+    ul.news-list li::before {
+        margin-top: 0.5em;
+    }
 
-.projects-grid{
-    grid-template-columns:1fr;
-}
+    .badge-new {
+        font-size: 0.65rem;
+        padding: 0 5px;
+    }
 
-.skills-row{
-    grid-template-columns:1fr;
-}
+    /* Social icons (header) */
+    .uk-flex-center a i {
+        font-size: 1rem;
+    }
 
-.skills-grid{
-    grid-template-columns:repeat(2,1fr);
-}
+    /* Contact section */
+    .uk-child-width-1-2\@m > * {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
 
-.interests-grid{
-    grid-template-columns:1fr;
-}
+    .uk-width-large {
+        width: 100% !important;
+    }
 
-.contact-container{
-    flex-direction:column;
-}
+    /* Social icons (bottom) */
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        line-height: 45px;
+        margin: 0 5px;
+    }
 
-.contact-info,
-.contact-form{
-    width:100%;
-}
+    .social-icon i {
+        font-size: 18px;
+        line-height: 45px;
+    }
 
-.thesis-header{
-    flex-direction:column;
-}
+    /* Publication items */
+    .uk-text-lead {
+        font-size: 0.9rem;
+    }
 
-.thesis-role{
-    align-self:flex-start;
-}
+    .uk-list > li {
+        margin-bottom: 18px;
+    }
 
-.research-item,
-.pub-item,
-.project-item,
-.skill-card,
-.contact-info,
-.contact-form,
-.education-item,
-.thesis-item{
-    padding:20px;
-}
+    .uk-list > li:hover {
+        padding: 10px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
 
-iframe{
-    width:100%;
-    height:220px;
-}
-}
-@media (max-width:480px){
+    /* Skills section */
+    .uk-list-bullet > li {
+        font-size: 0.9rem;
+        padding: 4px 0;
+    }
 
-.logo-text{
-    font-size:1.3rem;
-}
+    /* Thesis section */
+    #thesis .uk-text-lead {
+        font-size: 0.95rem;
+    }
 
-.hero h1{
-    font-size:1.7rem;
-}
+    /* Position cards */
+    .uk-flex-middle\@s {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
 
-.hero p{
-    font-size:.95rem;
-}
+    /* Footer */
+    .uk-section-secondary {
+        padding: 15px 0;
+    }
 
-.section-title{
-    font-size:1.7rem;
-}
+    .uk-section-secondary p {
+        font-size: 0.8rem;
+    }
 
-.profile-image{
-    width:220px;
-}
+    /* Button text (paper links) */
+    .uk-button-text {
+        font-size: 0.85rem;
+    }
 
-.skills-grid{
-    grid-template-columns:1fr 1fr;
-}
+    /* Status badges */
+    span[style*="background-color"] {
+        font-size: 0.75rem;
+        padding: 1px 4px !important;
+    }
 
-.pub-title,
-.project-title,
-.research-title,
-.thesis-title{
-    font-size:1.1rem;
-}
+    /* Hide desktop-only nav links */
+    .uk-visible\@m {
+        display: none !important;
+    }
 
-.project-description,
-.research-description,
-.thesis-description{
-    font-size:.95rem;
-}
-
-.contact-info,
-.contact-form{
-    padding:18px;
-}
-}
-@media (max-width:768px){
-
-.nav-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-direction:row;
-}
-
-nav ul{
-    position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    background:#fff;
-    display:none;
-    flex-direction:column;
-    padding:15px 0;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-    z-index:999;
+    /* Show mobile toggle */
+    .uk-hidden\@m {
+        display: flex !important;
+    }
 }
 
-nav ul.active{
-    display:flex;
+/* ---------- SMALL PHONES (≤ 480px) ---------- */
+@media (max-width: 480px) {
+    /* Container */
+    .uk-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /* Profile text */
+    .uk-width-expand p {
+        font-size: 0.88rem;
+    }
+
+    /* Section titles */
+    .uk-h2,
+    h2 {
+        font-size: 1.15rem;
+    }
+
+    /* News */
+    .news-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .news-list-wrapper {
+        padding: 0.2rem 0.8rem;
+        max-height: 350px;
+    }
+
+    ul.news-list li {
+        font-size: 0.8rem;
+        padding: 0.6rem 0;
+        gap: 6px;
+    }
+
+    .badge-new {
+        font-size: 0.6rem;
+        padding: 0 4px;
+    }
+
+    /* Cards */
+    .uk-card-body {
+        padding: 12px 14px;
+    }
+
+    /* Social icons (bottom) */
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        margin: 0 4px;
+    }
+
+    .social-icon i {
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    /* Publication links */
+    .uk-text-lead {
+        font-size: 0.85rem;
+    }
+
+    .uk-button-text {
+        font-size: 0.8rem;
+    }
+
+    /* Skills */
+    .uk-list-bullet > li {
+        font-size: 0.85rem;
+    }
+
+    /* Footer */
+    .uk-section-secondary p {
+        font-size: 0.7rem;
+    }
+
+    /* Status badges */
+    span[style*="background-color"] {
+        font-size: 0.65rem !important;
+    }
+
+    /* Hide profile image completely on very small */
+    .uk-width-1-2 {
+        width: 100% !important;
+    }
+
+    /* Contact card */
+    .uk-card-title {
+        font-size: 1rem;
+    }
+
+    .uk-card-primary p {
+        font-size: 0.85rem;
+    }
 }
 
-nav ul li{
-    margin:12px 0;
+/* ---------- LARGE SCREENS (≥ 1200px) ---------- */
+@media (min-width: 1200px) {
+    .uk-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .uk-card-body {
+        padding: 30px 35px;
+    }
+
+    .uk-h2,
+    h2 {
+        font-size: 1.7rem;
+    }
 }
 
-.menu-toggle{
-    display:flex;
-}
+/* ---------- PRINT STYLES ---------- */
+@media print {
+    .uk-navbar-container,
+    .uk-section-secondary {
+        background-color: #500000 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .uk-navbar-nav > li > a {
+        color: white !important;
+    }
+
+    .uk-logo {
+        color: white !important;
+    }
 }
